@@ -2,7 +2,8 @@
 
 A modern web UI to edit and merge multiple Docker Compose files, with live linting and YAML validation. Built using React (frontend) and Go (backend).
 
-<img width="2557" height="1341" alt="image" src="https://github.com/user-attachments/assets/734cac83-67cd-4075-b08f-41cf9b8ec231" />
+<img width="2556" height="1272" alt="image" src="https://github.com/user-attachments/assets/71306cae-588e-436c-9e94-1c74556f46eb" />
+
 
 
 
