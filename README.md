@@ -4,6 +4,7 @@ A modern web UI to edit and merge multiple Docker Compose files, with live linti
 
 <img width="2556" height="1272" alt="image" src="https://github.com/user-attachments/assets/71306cae-588e-436c-9e94-1c74556f46eb" />
 
+<img width="2554" height="1269" alt="image3" src="https://github.com/user-attachments/assets/5a840d7b-94f3-4999-ba7f-e7cddcbde146" />
 
 
 
