@@ -1,0 +1,21 @@
+# docker-compose.yml  – Compose‑Manager (internal‑only, for NPM)
+
+networks:
+  proxy_internal:        # ← the SAME network your “npm” container uses
+    external: true       #   (Compose will *not* try to create it)
+
+services:
+  compose-manager:
+    build: .             # uses the Dockerfile in this folder
+    container_name: compose-manager
+    environment:
+      - PORT=8686        # internal listener
+      - SCAN_DIRS=/data  # start scanning here (host root bind‑mounted below)
+    volumes:
+      - /:/data:ro       # read‑only view of the entire host
+    networks:
+      - proxy_internal   # joins Nginx Proxy Manager’s network
+    expose:
+      - "8686"           # visible only INSIDE proxy_internal
+    restart: unless-stopped
+

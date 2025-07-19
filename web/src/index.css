@@ -1,0 +1,29 @@
+/* web/src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Make react-split-pane edges look cleaner */
+.SplitPane {
+  position: relative !important;
+  height: 100% !important;
+}
+.Resizer {
+  background: #ddd;
+  opacity: 0.5;
+  z-index: 1;
+  box-sizing: border-box;
+  background-clip: padding-box;
+}
+.Resizer:hover {
+  transition: all 0.2s ease;
+}
+.Resizer.vertical {
+  width: 5px;
+  margin: 0 -2px;
+  cursor: col-resize;
+}
+.dark .Resizer {
+  background: #444;
+}
+
